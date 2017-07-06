@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza</title>
+    <link href="css/bootstrap.css" rel="stylesheet"  type="text/css">
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container main">
+      <h1>Make your pizza!</h1>
+      <div>
+        <form id="pizza">
+          <div class="radio">
+          <label>
+            <input type="radio" name="crust" value="thinCrust" checked>
+            Thin crust
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="crust" value="regular">
+            Regular
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="crust" value="thickCrust">
+            Thick crust
+          </label>
+        </div>
+        <select class="form-control" id="sauce">
+          <option>White sauce</option>
+          <option>Red sauce</option>
+          <option>No sauce</option>
+        </select>
+        <div class="form-group">
+          <label for="toppings">Enter your toppings:</label>
+          <input id="toppings" class="form-control" type="text">
+        </div>
+        <h2>Please enter your information</h2>
+        <div class="form-group">
+          <label for="firstName">First name</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last name</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+          <div class="form-group">
+            <label for="street">Street address</label>
+            <input id="street" class="form-control" type="text">
+          </div>
+        </div>
+          <div class="col-md-2">
+          <div class="form-group">
+            <label for="aptNumber">Apartment #</label>
+            <input id="aptNumber" class="form-control" type="text">
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+        </div>
+          <div class="col-md-1">
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          </div>
+          <div class="col-md-3">
+          <div class="form-group">
+            <label for="zip">Zip code</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit order</button>
+        </form>
+        <div id="receipt">
+          <p>Thank you <span class="firstName"></span> <span class="lastName"></span> for your order!</p>
+          <p>Your order of <span class="crust"></span> pizza with <span class="sauce"></span> and <span class="toppings"></span> toppings will be delivered to the following address:</p>
+          <p><span class="street"></span></p>
+          <p> Apt # <span class="aptNumber"></span></p>
+          <p><span class="city"></span>, <span class="state"></span>, <span class="zip"></span></p>
+        </div>
+    </div>
+  </body>
+</html>
